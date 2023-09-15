@@ -15,7 +15,10 @@ const Drawer = createDrawerNavigator();
 function App(): JSX.Element {
   return (
     <NavigationContainer>
-      <Drawer.Navigator>
+      <Drawer.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}>
         <Drawer.Screen name="FloatingScreen" component={FloatingScreen} />
         <Drawer.Screen name="FlexScreen" component={FlexScreen} />
         <Drawer.Screen name="AlignSelfScreen" component={AlignSelfScreen} />
